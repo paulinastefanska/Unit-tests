@@ -1,7 +1,7 @@
 const formatDate = (timeInSeconds) => {
 
 	if (!timeInSeconds) {
-		return `0s`;
+		return `0s`
 	}
 
 	let seconds = timeInSeconds;
@@ -11,9 +11,9 @@ const formatDate = (timeInSeconds) => {
 	minutes = minutes - hours * 60;
 	seconds = seconds - minutes * 60 - hours * 3600;
 
-	const result = (hours > 0 ? `${hours}h` : ``) + (minutes > 0 ? `${minutes}m` : ``) + (seconds > 0 ? `${seconds}s` : ``)
+	const result = (hours > 0 ? `${hours}h ` : ``) + (minutes > 0 ? `${minutes}m ` : ``) + (seconds > 0 ? `${seconds}s ` : ``);
 
-  return result.substring(0, result.lenght - 1);
-}
+  return result.substring(0, result.length - 1);
+};
 
 module.exports = formatDate;
