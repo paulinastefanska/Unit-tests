@@ -4,8 +4,11 @@
   "description": "unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha index.test.js"
   },
   "author": "Paulina",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
 }
