@@ -4,7 +4,8 @@
   "description": "unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js"
+    "test": "mocha index.test.js -b",
+    "test:watch": "onchange \"./*.js\" -- npm test"
   },
   "author": "Paulina",
   "license": "ISC",
